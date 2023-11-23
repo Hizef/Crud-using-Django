@@ -1,5 +1,3 @@
-# 관리자 페이지에서 어떻게 모델이 표시되는지를 조정하는데 사용
-
-from django.contrib import admin
-
-# Register your models here.
+version https://git-lfs.github.com/spec/v1
+oid sha256:06bad612e14c36438ef47a8bff09d4a174f7608f2464e7dd3c6f67afd0d82e72
+size 159

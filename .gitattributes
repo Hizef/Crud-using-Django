@@ -1,0 +1,4 @@
+# Allow tracking .gitignore
+myproject/myreactapp/**/.gitignore export-ignore
+myproject/myreactapp/** filter=lfs diff=lfs merge=lfs -text
+*.py filter=lfs diff=lfs merge=lfs -text

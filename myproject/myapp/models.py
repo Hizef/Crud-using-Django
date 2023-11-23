@@ -1,10 +1,3 @@
-from django.db import models
-
-# Create your models here.
-
-class Post(models.Model):
-    title = models.CharField(max_length=200)
-    content = models.TextField()
-
-    def __str__(self):
-        return self.title
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c5db182ece78e5c53e39f2e3c3f1b56869d452204bc86935d9e81a53b79635f
+size 220
