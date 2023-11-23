@@ -1,0 +1,13 @@
+<!-- myapp/templates/myapp/post_form.html -->
+<!-- Create/Update - 생성 및 수정 -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>{% if form.instance.pk %}글 수정{% else %}글 작성{% endif %}</h1>
+  <form method="post" action="{% if form.instance.pk %}{% url 'post_edit' pk=form.instance.pk %}{% else %}{% url 'post_new' %}{% endif %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">저장</button>
+  </form>
+{% endblock %}

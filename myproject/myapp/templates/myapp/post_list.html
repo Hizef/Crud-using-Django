@@ -1,0 +1,13 @@
+<!-- myapp/templates/myapp/post_list.html -->
+<!-- Read - 목록 조회 -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>글 목록</h1>
+  <ul>
+    {% for post in post_list %}
+      <li><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

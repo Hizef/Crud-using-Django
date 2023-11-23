@@ -1,0 +1,14 @@
+<!-- myapp/templates/myapp/post_confirm_delete.html -->
+<!-- Delete - 삭제 확인 -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>글 삭제 확인</h1>
+  <p>정말로 이 글을 삭제하시겠습니까?</p>
+  <form method="post" action="{% url 'post_delete' pk=post.pk %}">
+    {% csrf_token %}
+    <button type="submit">삭제</button>
+    <a href="{% url 'post_detail' pk=post.pk %}">취소</a>
+  </form>
+{% endblock %}
