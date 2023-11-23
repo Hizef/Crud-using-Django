@@ -1,6 +1,6 @@
 # Allow tracking .gitignore
 myproject/myreactapp/**/.gitignore export-ignore
 myproject/myreactapp/** filter=lfs diff=lfs merge=lfs -text
-*.py filter=lfs diff=lfs merge=lfs -text
-/crudDjango/** .gitignore export-ignore
-/crudDjango/** filter=lfs diff=lfs merge=lfs -text
+myproject/myreactapp/node_modules/** filter=lfs diff=lfs merge=lfs -text
+
+* text=auto eol=lf
